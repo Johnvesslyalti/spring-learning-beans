@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/beans
+                          http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="studentBean" class="com.example.beansexample.Student">
+<property name="name" value="John"></property>
+</bean>
+     
+     <bean id="instituteBean" class="com.example.beansexample.Institute">
+     <property name="student" ref="studentBean"></property>
+     </bean>                     
+</beans>
